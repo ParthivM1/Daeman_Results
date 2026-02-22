@@ -1,5 +1,11 @@
 ﻿# CONTOUR: Enterprise Quantum Error Suppression
 
+![Torino](https://img.shields.io/badge/Backend-IBM%20Torino-0a66c2)
+![vs X](https://img.shields.io/badge/CONTOUR%20vs%20X-12%2F12-success)
+![vs BB1](https://img.shields.io/badge/CONTOUR%20vs%20BB1-12%2F12-success)
+![vs XY4](https://img.shields.io/badge/CONTOUR%20vs%20XY4-10%2F12-success)
+![Mean dXY4](https://img.shields.io/badge/Mean%20dXY4-%2B0.0532-success)
+
 **CONTOUR** (Continuous Topological Phase Surfer) is a proprietary, deterministic quantum compiler for suppressing deep-time decoherence and lattice crosstalk on superconducting processors.
 
 CONTOUR is designed for low-latency operation and benchmarked against standard dynamic decoupling baselines (`X`, `XY4`, `BB1`) on IBM heavy-hex hardware.
@@ -36,6 +42,12 @@ Evaluation matrix:
 Primary artifact:
 - `data/torino/validation3_torino_full_paritylift_aggregate_today.json`
 
+Quick links:
+- Slot table: `docs/torino_table.md`
+- Deep-time curve: `docs/figures/deep_time_decay_curve.png`
+- Scaling chart: `docs/figures/lattice_scaling_bar_chart.png`
+- Delta heatmap: `docs/figures/heatmap_dxy4.png`
+
 ### Deep-Time Rescue at 8000dt
 
 | Lattice Density | XY4 Baseline | CONTOUR | Relative Gain |
@@ -51,6 +63,15 @@ In the dense Q12 deep-time regime, CONTOUR shows the largest uplift (about **5x*
 - **vs X:** 12 / 12 wins (`+0.1929` mean absolute gain)
 - **vs BB1:** 12 / 12 wins (`+0.1016` mean absolute gain)
 - **vs XY4:** 10 / 12 wins (`+0.0532` mean absolute gain)
+
+### Q12 Deep-Window Trace (CONTOUR vs XY4)
+
+| Window (dt) | XY4 | CONTOUR | Delta |
+|--:|--:|--:|--:|
+| 3200 | 0.2852 | 0.2480 | -0.0371 |
+| 4912 | 0.1113 | 0.1641 | +0.0527 |
+| 6400 | 0.0684 | 0.1445 | +0.0762 |
+| 8000 | 0.0234 | 0.1172 | +0.0938 |
 
 ---
 
@@ -70,6 +91,16 @@ As active lattice density increases, CONTOUR preserves a larger fraction of usab
 ![Delta Heatmap vs XY4](docs/figures/heatmap_dxy4.png)
 
 Positive cells represent per-slot CONTOUR uplift against XY4.
+
+### 4) Per-Lattice Decay Curves
+
+| q6 | q8 |
+|:--:|:--:|
+| ![q6 decay](docs/figures/decay_q6.png) | ![q8 decay](docs/figures/decay_q8.png) |
+
+| q12 |
+|:--:|
+| ![q12 decay](docs/figures/decay_q12.png) |
 
 ---
 
