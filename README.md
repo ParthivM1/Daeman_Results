@@ -1,78 +1,93 @@
-﻿# CONTOUR Results (Public Artifacts)
+﻿# CONTOUR: Enterprise Quantum Error Suppression
 
-Deterministic quantum error-suppression results on IBM Torino.  
-This repository is intentionally **artifacts-only**: scores, plots, and benchmark outputs.
+**CONTOUR** (Continuous Topological Phase Surfer) is a proprietary, deterministic quantum compiler for suppressing deep-time decoherence and lattice crosstalk on superconducting processors.
 
-## Notice
+CONTOUR is designed for low-latency operation and benchmarked against standard dynamic decoupling baselines (`X`, `XY4`, `BB1`) on IBM heavy-hex hardware.
 
-The CONTOUR compiler source and internal tooling are proprietary and are not published here.
+> This repository is the **public benchmark showcase** only.  
+> The core CONTOUR transpilation engine and calibration daemon are proprietary commercial IP.
 
-## Public Benchmark Snapshot (Torino)
+---
 
-Reference file: `data/torino/validation3_torino_full_paritylift_aggregate_today.json`
+## The Technology: Why CONTOUR Wins
 
-| Metric | Result |
-|:--|--:|
-| Total slots | 12 |
-| CONTOUR vs X | 12/12 |
-| CONTOUR vs BB1 | 12/12 |
-| CONTOUR vs XY4 | 10/12 |
-| Mean (CONTOUR - X) | +0.1929 |
-| Mean (CONTOUR - BB1) | +0.1016 |
-| Mean (CONTOUR - XY4) | +0.0532 |
+Standard decoupling often trades off between symmetric timing (amplitude robustness) and asymmetric timing (phase-drift tracking). CONTOUR combines both while preserving lattice stability.
 
-### Deep-Time Highlight (8000dt)
+CONTOUR is built on three core pillars:
 
-| Qubits | XY4 | CONTOUR | Delta |
-|--:|--:|--:|--:|
-| 6  | 0.1738 | 0.2461 | +0.0723 |
-| 8  | 0.0664 | 0.0762 | +0.0098 |
-| 12 | 0.0234 | 0.1172 | +0.0938 |
+1. **Symmetric Phase Surfer**  
+   Maintains Hahn-echo-compatible time-reversal structure to suppress commutator buildup, while applying bounded phase pre-distortion to track macroscopic drift.
 
-## Visual Results
+2. **Parity-Preserving $Z_4$ Topological Shield**  
+   Lifts spatial scheduling from bipartite $Z_2$ structure into a parity-safe $Z_4$ phase family (`X, Y, -X, -Y`) to reduce higher-order spectator crosstalk while preserving edge orthogonality.
 
-### 1) Deep-Time Survival Curve
+3. **Thermodynamic Action Integral**  
+   Selects pulse volume from measured non-linear drift action, avoiding unnecessary microwave tax when lower pulse counts are sufficient.
 
+---
+
+## Benchmark Results (IBM Torino)
+
+Evaluation matrix:
+- Lattice sizes: Q6, Q8, Q12
+- Memory windows: 3200dt, 4912dt, 6400dt, 8000dt
+- Baselines: `X`, `XY4`, `BB1`
+
+Primary artifact:
+- `data/torino/validation3_torino_full_paritylift_aggregate_today.json`
+
+### Deep-Time Rescue at 8000dt
+
+| Lattice Density | XY4 Baseline | CONTOUR | Relative Gain |
+|:--|--:|--:|--:|
+| Sparse (6-Qubit) | 17.4% | **24.6%** | **1.4x** |
+| Medium (8-Qubit) | 6.6% | **7.6%** | **1.1x** |
+| Dense (12-Qubit) | 2.3% | **11.7%** | **5.0x** |
+
+In the dense Q12 deep-time regime, CONTOUR shows the largest uplift (about **5x** relative gain versus XY4).
+
+### Aggregate Sweep Performance (12 Slots)
+
+- **vs X:** 12 / 12 wins (`+0.1929` mean absolute gain)
+- **vs BB1:** 12 / 12 wins (`+0.1016` mean absolute gain)
+- **vs XY4:** 10 / 12 wins (`+0.0532` mean absolute gain)
+
+---
+
+## Visualizing the Results
+
+### 1) Deep-Time Survival (Q12)
 ![Deep-Time Decay Curve](docs/figures/deep_time_decay_curve.png)
 
-This chart highlights long-window behavior where standard decoupling often collapses.
+CONTOUR maintains stronger fidelity at long windows where baseline methods degrade.
 
 ### 2) Lattice Scaling at 8000dt
-
 ![Lattice Scaling](docs/figures/lattice_scaling_bar_chart.png)
 
-As active lattice size grows (q6 -> q12), CONTOUR maintains stronger deep-time fidelity.
+As active lattice density increases, CONTOUR preserves a larger fraction of usable signal in deep-time operation.
 
-### 3) Delta Heatmap vs XY4
-
+### 3) Slot-Wise Delta vs XY4
 ![Delta Heatmap vs XY4](docs/figures/heatmap_dxy4.png)
 
-Green cells indicate positive CONTOUR gain against XY4 by slot (qubit-set x depth).
+Positive cells represent per-slot CONTOUR uplift against XY4.
 
-### 4) Per-Layout Decay Curves
+---
 
-| q6 | q8 |
-|:--:|:--:|
-| ![q6 decay](docs/figures/decay_q6.png) | ![q8 decay](docs/figures/decay_q8.png) |
-
-| q12 |
-|:--:|
-| ![q12 decay](docs/figures/decay_q12.png) |
-
-## Included Artifacts
+## Included Public Artifacts
 
 - Raw run outputs: `data/torino/validation3_torino_full_q*_paritylift.json`
 - Aggregate scorecard: `data/torino/validation3_torino_full_paritylift_aggregate_today.json`
 - Figures: `docs/figures/*.png`
 - Slot table: `docs/torino_table.md`
 
-## Not Included (By Design)
+## Not Included (Proprietary)
 
 - Compiler source code
-- Calibration daemon source
-- Internal generation scripts
-- Runtime execution code
+- Calibration daemon code
+- Internal generation and runtime scripts
 
-## Contact
+---
 
-For collaboration, evaluation access, or licensing inquiries, contact the repository owner.
+## Commercial Access
+
+For benchmark verification, partnership inquiries, or evaluation access, contact the repository owner.
