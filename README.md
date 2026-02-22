@@ -42,6 +42,19 @@ Evaluation matrix:
 Primary artifact:
 - `data/torino/validation3_torino_full_paritylift_aggregate_today.json`
 
+### Latest Deep Validation (Today)
+
+Deep-only confirmation rerun (`6400dt`, `8000dt`) across Q6/Q8/Q12:
+- Artifact: `data/torino/validation3_torino_deep_aggregate_today2.json`
+- **vs X:** 6 / 6 wins (`+0.1768` mean absolute gain)
+- **vs BB1:** 6 / 6 wins (`+0.1312` mean absolute gain)
+- **vs XY4:** 6 / 6 wins (`+0.0843` mean absolute gain)
+
+![Latest Deep Check dXY4](docs/figures/deep_check_today2_dxy4.png)
+
+Detailed deep slot table:
+- `docs/deep_check_today2.md`
+
 Quick links:
 - Slot table: `docs/torino_table.md`
 - Deep-time curve: `docs/figures/deep_time_decay_curve.png`
@@ -108,8 +121,11 @@ Positive cells represent per-slot CONTOUR uplift against XY4.
 
 - Raw run outputs: `data/torino/validation3_torino_full_q*_paritylift.json`
 - Aggregate scorecard: `data/torino/validation3_torino_full_paritylift_aggregate_today.json`
+- Deep rerun outputs: `data/torino/validation3_torino_deep_q*_today2.json`
+- Deep rerun aggregate: `data/torino/validation3_torino_deep_aggregate_today2.json`
 - Figures: `docs/figures/*.png`
 - Slot table: `docs/torino_table.md`
+- Deep table: `docs/deep_check_today2.md`
 
 ## Not Included (Proprietary)
 
