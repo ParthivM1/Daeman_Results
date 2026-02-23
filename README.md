@@ -15,20 +15,15 @@ CONTOUR is designed for low-latency operation and benchmarked against standard d
 
 ---
 
-## The Technology: Why CONTOUR Wins
+## Approach (High-Level)
 
-Standard decoupling often trades off between symmetric timing (amplitude robustness) and asymmetric timing (phase-drift tracking). CONTOUR combines both while preserving lattice stability.
+CONTOUR is an adaptive, hardware-aware suppression stack that:
 
-CONTOUR is built on three core pillars:
+1. Uses calibration-derived signals to adapt control intensity by regime.
+2. Applies topology-aware coordination to reduce interference at scale.
+3. Runs as a deterministic low-latency runtime layer suitable for production workflows.
 
-1. **Symmetric Phase Surfer**  
-   Maintains Hahn-echo-compatible time-reversal structure to suppress commutator buildup, while applying bounded phase pre-distortion to track macroscopic drift.
-
-2. **Parity-Preserving $Z_4$ Topological Shield**  
-   Lifts spatial scheduling from bipartite $Z_2$ structure into a parity-safe $Z_4$ phase family (`X, Y, -X, -Y`) to reduce higher-order spectator crosstalk while preserving edge orthogonality.
-
-3. **Thermodynamic Action Integral**  
-   Selects pulse volume from measured non-linear drift action, avoiding unnecessary microwave tax when lower pulse counts are sufficient.
+Detailed actuator math, scheduling policy, and calibration logic are intentionally withheld.
 
 ---
 
@@ -133,6 +128,8 @@ Positive cells represent per-slot CONTOUR uplift against XY4.
 - Compiler source code
 - Calibration daemon code
 - Internal generation and runtime scripts
+- Method derivations and scheduling internals
+- Parameterization and policy logic used in production
 
 ---
 
