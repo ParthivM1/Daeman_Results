@@ -1,6 +1,6 @@
 {
   "version": "validation3-direct",
-  "timestamp_utc": "2026-02-23T05:21:51.144531+00:00",
+  "timestamp_utc": "2026-02-23T15:12:13.668401+00:00",
   "mode": "runtime",
   "backend": "ibm_torino",
   "grid_dt": 16,
@@ -57,8 +57,8 @@
     "CONTOUR"
   ],
   "jobs": {
-    "map_job_id": "d6du7oh54hss73ba74h0",
-    "stress_job_id": "d6du7q17ce2c73fi6850"
+    "map_job_id": "d6e6secnsg9c739c5fkg",
+    "stress_job_id": "d6e6si17ce2c73figevg"
   },
   "records": [
     {
@@ -66,9 +66,9 @@
       "arms": {
         "BASE": {
           "fidelity": 0.001953125,
-          "no_drift_ceiling_est": 0.002743532062878084,
-          "modeled_drift_survival": 0.7119016491285642,
-          "modeled_residual_phase_rms": 0.3352053521232475,
+          "no_drift_ceiling_est": 0.002681921698107897,
+          "modeled_drift_survival": 0.7282557881454687,
+          "modeled_residual_phase_rms": 0.32412140076092893,
           "metadata": {
             "applied_counts": {
               "BASE": 12
@@ -86,10 +86,10 @@
           }
         },
         "X": {
-          "fidelity": 0.0,
-          "no_drift_ceiling_est": 0.0,
-          "modeled_drift_survival": 0.709200716624722,
-          "modeled_residual_phase_rms": 0.3370599001573986,
+          "fidelity": 0.001953125,
+          "no_drift_ceiling_est": 0.00268594402509182,
+          "modeled_drift_survival": 0.7271651909921062,
+          "modeled_residual_phase_rms": 0.3248816806472309,
           "metadata": {
             "applied_counts": {
               "X": 12
@@ -107,10 +107,10 @@
           }
         },
         "XY4": {
-          "fidelity": 0.068359375,
-          "no_drift_ceiling_est": 0.07611461550089949,
-          "modeled_drift_survival": 0.8981110204674444,
-          "modeled_residual_phase_rms": 0.18895285193071892,
+          "fidelity": 0.07421875,
+          "no_drift_ceiling_est": 0.09927457971021651,
+          "modeled_drift_survival": 0.7476108205811122,
+          "modeled_residual_phase_rms": 0.30954206802963413,
           "metadata": {
             "applied_counts": {
               "XY4": 12
@@ -128,10 +128,10 @@
           }
         },
         "BB1": {
-          "fidelity": 0.03515625,
-          "no_drift_ceiling_est": 0.040425399742330205,
-          "modeled_drift_survival": 0.8696574486358689,
-          "modeled_residual_phase_rms": 0.215139519051862,
+          "fidelity": 0.0390625,
+          "no_drift_ceiling_est": 0.04488461091584382,
+          "modeled_drift_survival": 0.8702871474866974,
+          "modeled_residual_phase_rms": 0.2146089334748607,
           "metadata": {
             "applied_counts": {
               "BB1": 12
@@ -149,10 +149,10 @@
           }
         },
         "CONTOUR": {
-          "fidelity": 0.115234375,
-          "no_drift_ceiling_est": 0.13062744357861691,
-          "modeled_drift_survival": 0.882160531072839,
-          "modeled_residual_phase_rms": 0.20398988231650997,
+          "fidelity": 0.12109375,
+          "no_drift_ceiling_est": 0.17603872678989554,
+          "modeled_drift_survival": 0.6878813100285992,
+          "modeled_residual_phase_rms": 0.3511496547572756,
           "metadata": {
             "applied_counts": {
               "CONTOUR": 12
@@ -171,16 +171,16 @@
         }
       },
       "best_arm": "CONTOUR",
-      "best_arm_fidelity": 0.115234375
+      "best_arm_fidelity": 0.12109375
     },
     {
       "time_executed_dt": 8000,
       "arms": {
         "BASE": {
-          "fidelity": 0.00390625,
-          "no_drift_ceiling_est": 0.005618225584458096,
-          "modeled_drift_survival": 0.6952818005040601,
-          "modeled_residual_phase_rms": 0.3464984324982525,
+          "fidelity": 0.0,
+          "no_drift_ceiling_est": 0.0,
+          "modeled_drift_survival": 0.6825560872515376,
+          "modeled_residual_phase_rms": 0.35543211555220666,
           "metadata": {
             "applied_counts": {
               "BASE": 12
@@ -198,10 +198,10 @@
           }
         },
         "X": {
-          "fidelity": 0.0,
-          "no_drift_ceiling_est": 0.0,
-          "modeled_drift_survival": 0.696774989574315,
-          "modeled_residual_phase_rms": 0.34548251169507316,
+          "fidelity": 0.001953125,
+          "no_drift_ceiling_est": 0.002856079030439714,
+          "modeled_drift_survival": 0.6838483736562787,
+          "modeled_residual_phase_rms": 0.3545584975940167,
           "metadata": {
             "applied_counts": {
               "X": 12
@@ -220,9 +220,9 @@
         },
         "XY4": {
           "fidelity": 0.02734375,
-          "no_drift_ceiling_est": 0.03164779557849004,
-          "modeled_drift_survival": 0.864001725876435,
-          "modeled_residual_phase_rms": 0.220130090903047,
+          "no_drift_ceiling_est": 0.03126750362937855,
+          "modeled_drift_survival": 0.8745101727375562,
+          "modeled_residual_phase_rms": 0.2107475007306488,
           "metadata": {
             "applied_counts": {
               "XY4": 12
@@ -240,10 +240,10 @@
           }
         },
         "BB1": {
-          "fidelity": 0.013671875,
-          "no_drift_ceiling_est": 0.015737681101099788,
-          "modeled_drift_survival": 0.8687350386738091,
-          "modeled_residual_phase_rms": 0.21590898517720117,
+          "fidelity": 0.0,
+          "no_drift_ceiling_est": 0.0,
+          "modeled_drift_survival": 0.7941646238870341,
+          "modeled_residual_phase_rms": 0.2740651574494953,
           "metadata": {
             "applied_counts": {
               "BB1": 12
@@ -261,10 +261,10 @@
           }
         },
         "CONTOUR": {
-          "fidelity": 0.08203125,
-          "no_drift_ceiling_est": 0.09554600311463676,
-          "modeled_drift_survival": 0.8585523970225979,
-          "modeled_residual_phase_rms": 0.2248025178160342,
+          "fidelity": 0.064453125,
+          "no_drift_ceiling_est": 0.0769816683973599,
+          "modeled_drift_survival": 0.8372528985382504,
+          "modeled_residual_phase_rms": 0.24203820830956285,
           "metadata": {
             "applied_counts": {
               "CONTOUR": 12
@@ -283,7 +283,7 @@
         }
       },
       "best_arm": "CONTOUR",
-      "best_arm_fidelity": 0.08203125
+      "best_arm_fidelity": 0.064453125
     }
   ]
 }

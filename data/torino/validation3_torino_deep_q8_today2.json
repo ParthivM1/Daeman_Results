@@ -1,6 +1,6 @@
 {
   "version": "validation3-direct",
-  "timestamp_utc": "2026-02-23T05:21:24.912126+00:00",
+  "timestamp_utc": "2026-02-23T15:12:11.311183+00:00",
   "mode": "runtime",
   "backend": "ibm_torino",
   "grid_dt": 16,
@@ -49,18 +49,18 @@
     "CONTOUR"
   ],
   "jobs": {
-    "map_job_id": "d6du7i154hss73ba747g",
-    "stress_job_id": "d6du7jng4t5c73874s50"
+    "map_job_id": "d6e6se154hss73bahp10",
+    "stress_job_id": "d6e6sfsnsg9c739c5fmg"
   },
   "records": [
     {
       "time_executed_dt": 6400,
       "arms": {
         "BASE": {
-          "fidelity": 0.01171875,
-          "no_drift_ceiling_est": 0.01648390989479772,
-          "modeled_drift_survival": 0.7109205324944422,
-          "modeled_residual_phase_rms": 0.4110391058818975,
+          "fidelity": 0.0234375,
+          "no_drift_ceiling_est": 0.033248730683143365,
+          "modeled_drift_survival": 0.704914128101813,
+          "modeled_residual_phase_rms": 0.4158458162843354,
           "metadata": {
             "applied_counts": {
               "BASE": 8
@@ -78,10 +78,10 @@
           }
         },
         "X": {
-          "fidelity": 0.015625,
-          "no_drift_ceiling_est": 0.02195478206466843,
-          "modeled_drift_survival": 0.711690052489527,
-          "modeled_residual_phase_rms": 0.41040313144700863,
+          "fidelity": 0.017578125,
+          "no_drift_ceiling_est": 0.02496810711136193,
+          "modeled_drift_survival": 0.7040231332555017,
+          "modeled_residual_phase_rms": 0.4165929054280567,
           "metadata": {
             "applied_counts": {
               "X": 8
@@ -99,10 +99,10 @@
           }
         },
         "XY4": {
-          "fidelity": 0.146484375,
-          "no_drift_ceiling_est": 0.1524956937717147,
-          "modeled_drift_survival": 0.96058040313772,
-          "modeled_residual_phase_rms": 0.1416418666873733,
+          "fidelity": 0.162109375,
+          "no_drift_ceiling_est": 0.1656550371223488,
+          "modeled_drift_survival": 0.9785961104235541,
+          "modeled_residual_phase_rms": 0.10395205584155308,
           "metadata": {
             "applied_counts": {
               "XY4": 8
@@ -120,10 +120,10 @@
           }
         },
         "BB1": {
-          "fidelity": 0.099609375,
-          "no_drift_ceiling_est": 0.10514370705511317,
-          "modeled_drift_survival": 0.9473641151703712,
-          "modeled_residual_phase_rms": 0.16408713482267753,
+          "fidelity": 0.091796875,
+          "no_drift_ceiling_est": 0.10067096811549411,
+          "modeled_drift_survival": 0.9118505237248402,
+          "modeled_residual_phase_rms": 0.21424925361275873,
           "metadata": {
             "applied_counts": {
               "BB1": 8
@@ -141,10 +141,122 @@
           }
         },
         "CONTOUR": {
-          "fidelity": 0.251953125,
-          "no_drift_ceiling_est": 0.2657281989746713,
-          "modeled_drift_survival": 0.9481610381290986,
-          "modeled_residual_phase_rms": 0.16261118034346306,
+          "fidelity": 0.203125,
+          "no_drift_ceiling_est": 0.22208280633293412,
+          "modeled_drift_survival": 0.9146363167596431,
+          "modeled_residual_phase_rms": 0.21065402608230846,
+          "metadata": {
+            "applied_counts": {
+              "CONTOUR": 8
+            },
+            "pulse_count_total": 24
+          },
+          "magnus_bounds": {
+            "first_order_dc_mean": 0.0,
+            "first_order_linear_mean": 0.0,
+            "first_order_total_mean": 0.0,
+            "second_order_raw_mean": 0.0,
+            "second_order_norm_mean": 0.0,
+            "second_order_norm_p90": 0.0,
+            "sample_dt": 16.0
+          }
+        }
+      },
+      "best_arm": "CONTOUR",
+      "best_arm_fidelity": 0.203125
+    },
+    {
+      "time_executed_dt": 8000,
+      "arms": {
+        "BASE": {
+          "fidelity": 0.00390625,
+          "no_drift_ceiling_est": 0.006091893625559141,
+          "modeled_drift_survival": 0.64122097989547,
+          "modeled_residual_phase_rms": 0.4679747908042361,
+          "metadata": {
+            "applied_counts": {
+              "BASE": 8
+            },
+            "pulse_count_total": 0
+          },
+          "magnus_bounds": {
+            "first_order_dc_mean": 0.0,
+            "first_order_linear_mean": 0.0,
+            "first_order_total_mean": 0.0,
+            "second_order_raw_mean": 0.0,
+            "second_order_norm_mean": 0.0,
+            "second_order_norm_p90": 0.0,
+            "sample_dt": 16.0
+          }
+        },
+        "X": {
+          "fidelity": 0.0078125,
+          "no_drift_ceiling_est": 0.012151377897875942,
+          "modeled_drift_survival": 0.6429312021779541,
+          "modeled_residual_phase_rms": 0.4665904373253334,
+          "metadata": {
+            "applied_counts": {
+              "X": 8
+            },
+            "pulse_count_total": 8
+          },
+          "magnus_bounds": {
+            "first_order_dc_mean": 0.0,
+            "first_order_linear_mean": 0.0,
+            "first_order_total_mean": 0.0,
+            "second_order_raw_mean": 0.0,
+            "second_order_norm_mean": 0.0,
+            "second_order_norm_p90": 0.0,
+            "sample_dt": 16.0
+          }
+        },
+        "XY4": {
+          "fidelity": 0.083984375,
+          "no_drift_ceiling_est": 0.09073658978961026,
+          "modeled_drift_survival": 0.925584432859263,
+          "modeled_residual_phase_rms": 0.19631100111627825,
+          "metadata": {
+            "applied_counts": {
+              "XY4": 8
+            },
+            "pulse_count_total": 32
+          },
+          "magnus_bounds": {
+            "first_order_dc_mean": 0.0,
+            "first_order_linear_mean": 0.0,
+            "first_order_total_mean": 0.0,
+            "second_order_raw_mean": 0.0,
+            "second_order_norm_mean": 0.0,
+            "second_order_norm_p90": 0.0,
+            "sample_dt": 16.0
+          }
+        },
+        "BB1": {
+          "fidelity": 0.02734375,
+          "no_drift_ceiling_est": 0.036111964498649424,
+          "modeled_drift_survival": 0.7571936442566742,
+          "modeled_residual_phase_rms": 0.36912167274042956,
+          "metadata": {
+            "applied_counts": {
+              "BB1": 8
+            },
+            "pulse_count_total": 40
+          },
+          "magnus_bounds": {
+            "first_order_dc_mean": 0.0,
+            "first_order_linear_mean": 0.0,
+            "first_order_total_mean": 0.0,
+            "second_order_raw_mean": 0.0,
+            "second_order_norm_mean": 0.0,
+            "second_order_norm_p90": 0.0,
+            "sample_dt": 16.0
+          }
+        },
+        "CONTOUR": {
+          "fidelity": 0.115234375,
+          "no_drift_ceiling_est": 0.12366731086737788,
+          "modeled_drift_survival": 0.931809499145482,
+          "modeled_residual_phase_rms": 0.18745420017681405,
           "metadata": {
             "applied_counts": {
               "CONTOUR": 8
@@ -163,119 +275,7 @@
         }
       },
       "best_arm": "CONTOUR",
-      "best_arm_fidelity": 0.251953125
-    },
-    {
-      "time_executed_dt": 8000,
-      "arms": {
-        "BASE": {
-          "fidelity": 0.015625,
-          "no_drift_ceiling_est": 0.025086411618805975,
-          "modeled_drift_survival": 0.6228471507773058,
-          "modeled_residual_phase_rms": 0.4827883233362178,
-          "metadata": {
-            "applied_counts": {
-              "BASE": 8
-            },
-            "pulse_count_total": 0
-          },
-          "magnus_bounds": {
-            "first_order_dc_mean": 0.0,
-            "first_order_linear_mean": 0.0,
-            "first_order_total_mean": 0.0,
-            "second_order_raw_mean": 0.0,
-            "second_order_norm_mean": 0.0,
-            "second_order_norm_p90": 0.0,
-            "sample_dt": 16.0
-          }
-        },
-        "X": {
-          "fidelity": 0.01171875,
-          "no_drift_ceiling_est": 0.018770509837790394,
-          "modeled_drift_survival": 0.6243170857515448,
-          "modeled_residual_phase_rms": 0.48160375942226075,
-          "metadata": {
-            "applied_counts": {
-              "X": 8
-            },
-            "pulse_count_total": 8
-          },
-          "magnus_bounds": {
-            "first_order_dc_mean": 0.0,
-            "first_order_linear_mean": 0.0,
-            "first_order_total_mean": 0.0,
-            "second_order_raw_mean": 0.0,
-            "second_order_norm_mean": 0.0,
-            "second_order_norm_p90": 0.0,
-            "sample_dt": 16.0
-          }
-        },
-        "XY4": {
-          "fidelity": 0.08984375,
-          "no_drift_ceiling_est": 0.10160153158984662,
-          "modeled_drift_survival": 0.8842755477613133,
-          "modeled_residual_phase_rms": 0.24710299053594087,
-          "metadata": {
-            "applied_counts": {
-              "XY4": 8
-            },
-            "pulse_count_total": 32
-          },
-          "magnus_bounds": {
-            "first_order_dc_mean": 0.0,
-            "first_order_linear_mean": 0.0,
-            "first_order_total_mean": 0.0,
-            "second_order_raw_mean": 0.0,
-            "second_order_norm_mean": 0.0,
-            "second_order_norm_p90": 0.0,
-            "sample_dt": 16.0
-          }
-        },
-        "BB1": {
-          "fidelity": 0.046875,
-          "no_drift_ceiling_est": 0.050529793737243055,
-          "modeled_drift_survival": 0.9276705193722316,
-          "modeled_residual_phase_rms": 0.19340441624915322,
-          "metadata": {
-            "applied_counts": {
-              "BB1": 8
-            },
-            "pulse_count_total": 40
-          },
-          "magnus_bounds": {
-            "first_order_dc_mean": 0.0,
-            "first_order_linear_mean": 0.0,
-            "first_order_total_mean": 0.0,
-            "second_order_raw_mean": 0.0,
-            "second_order_norm_mean": 0.0,
-            "second_order_norm_p90": 0.0,
-            "sample_dt": 16.0
-          }
-        },
-        "CONTOUR": {
-          "fidelity": 0.15625,
-          "no_drift_ceiling_est": 0.1746568169053898,
-          "modeled_drift_survival": 0.8946115174229894,
-          "modeled_residual_phase_rms": 0.23540806122667732,
-          "metadata": {
-            "applied_counts": {
-              "CONTOUR": 8
-            },
-            "pulse_count_total": 20
-          },
-          "magnus_bounds": {
-            "first_order_dc_mean": 0.0,
-            "first_order_linear_mean": 0.0,
-            "first_order_total_mean": 0.0,
-            "second_order_raw_mean": 0.0,
-            "second_order_norm_mean": 0.0,
-            "second_order_norm_p90": 0.0,
-            "sample_dt": 16.0
-          }
-        }
-      },
-      "best_arm": "CONTOUR",
-      "best_arm_fidelity": 0.15625
+      "best_arm_fidelity": 0.115234375
     }
   ]
 }

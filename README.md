@@ -46,9 +46,9 @@ Primary artifact:
 
 Deep-only confirmation rerun (`6400dt`, `8000dt`) across Q6/Q8/Q12:
 - Artifact: `data/torino/validation3_torino_deep_aggregate_today2.json`
-- **vs X:** 6 / 6 wins (`+0.1953` mean absolute gain)
-- **vs BB1:** 6 / 6 wins (`+0.1257` mean absolute gain)
-- **vs XY4:** 6 / 6 wins (`+0.0970` mean absolute gain)
+- **vs X:** 6 / 6 wins (`+0.1465` mean absolute gain)
+- **vs BB1:** 6 / 6 wins (`+0.0944` mean absolute gain)
+- **vs XY4:** 6 / 6 wins (`+0.0423` mean absolute gain)
 
 ![Latest Deep Check dXY4](docs/figures/deep_check_today2_dxy4.png)
 

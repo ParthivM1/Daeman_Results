@@ -1,6 +1,6 @@
 {
   "version": "validation3-direct",
-  "timestamp_utc": "2026-02-23T05:20:58.683698+00:00",
+  "timestamp_utc": "2026-02-23T15:11:33.692052+00:00",
   "mode": "runtime",
   "backend": "ibm_torino",
   "grid_dt": 16,
@@ -45,18 +45,18 @@
     "CONTOUR"
   ],
   "jobs": {
-    "map_job_id": "d6du7bh54hss73ba73ug",
-    "stress_job_id": "d6du7csnsg9c739br1a0"
+    "map_job_id": "d6e6s6ng4t5c7387f8c0",
+    "stress_job_id": "d6e6s8154hss73bahoq0"
   },
   "records": [
     {
       "time_executed_dt": 6400,
       "arms": {
         "BASE": {
-          "fidelity": 0.056640625,
-          "no_drift_ceiling_est": 0.06514391935397755,
-          "modeled_drift_survival": 0.8694691010565001,
-          "modeled_residual_phase_rms": 0.304589260002071,
+          "fidelity": 0.05859375,
+          "no_drift_ceiling_est": 0.073287893593474,
+          "modeled_drift_survival": 0.7995010789233209,
+          "modeled_residual_phase_rms": 0.3842464060278046,
           "metadata": {
             "applied_counts": {
               "BASE": 6
@@ -74,10 +74,10 @@
           }
         },
         "X": {
-          "fidelity": 0.060546875,
-          "no_drift_ceiling_est": 0.06962840454401822,
-          "modeled_drift_survival": 0.8695714830249056,
-          "modeled_residual_phase_rms": 0.3044616802981004,
+          "fidelity": 0.052734375,
+          "no_drift_ceiling_est": 0.06583656658289266,
+          "modeled_drift_survival": 0.8009891423120292,
+          "modeled_residual_phase_rms": 0.3826713902131531,
           "metadata": {
             "applied_counts": {
               "X": 6
@@ -95,10 +95,10 @@
           }
         },
         "XY4": {
-          "fidelity": 0.23828125,
-          "no_drift_ceiling_est": 0.2466995658745131,
-          "modeled_drift_survival": 0.9658762436623208,
-          "modeled_residual_phase_rms": 0.15186652657578015,
+          "fidelity": 0.22265625,
+          "no_drift_ceiling_est": 0.23223574562242194,
+          "modeled_drift_survival": 0.9587509855696519,
+          "modeled_residual_phase_rms": 0.16739713055555566,
           "metadata": {
             "applied_counts": {
               "XY4": 6
@@ -116,10 +116,10 @@
           }
         },
         "BB1": {
-          "fidelity": 0.216796875,
-          "no_drift_ceiling_est": 0.22810453671739706,
-          "modeled_drift_survival": 0.9504277210785758,
-          "modeled_residual_phase_rms": 0.18388934945476396,
+          "fidelity": 0.181640625,
+          "no_drift_ceiling_est": 0.19046380111156944,
+          "modeled_drift_survival": 0.953675312263662,
+          "modeled_residual_phase_rms": 0.1776612860260232,
           "metadata": {
             "applied_counts": {
               "BB1": 6
@@ -137,15 +137,15 @@
           }
         },
         "CONTOUR": {
-          "fidelity": 0.3828125,
-          "no_drift_ceiling_est": 0.4269001260327396,
-          "modeled_drift_survival": 0.8967261348867382,
-          "modeled_residual_phase_rms": 0.26859362040213197,
+          "fidelity": 0.2890625,
+          "no_drift_ceiling_est": 0.3003704117439092,
+          "modeled_drift_survival": 0.9623534432760636,
+          "modeled_residual_phase_rms": 0.15976266612814538,
           "metadata": {
             "applied_counts": {
               "CONTOUR": 6
             },
-            "pulse_count_total": 16
+            "pulse_count_total": 20
           },
           "magnus_bounds": {
             "first_order_dc_mean": 0.0,
@@ -159,16 +159,16 @@
         }
       },
       "best_arm": "CONTOUR",
-      "best_arm_fidelity": 0.3828125
+      "best_arm_fidelity": 0.2890625
     },
     {
       "time_executed_dt": 8000,
       "arms": {
         "BASE": {
-          "fidelity": 0.029296875,
-          "no_drift_ceiling_est": 0.035655761785429084,
-          "modeled_drift_survival": 0.821658927841848,
-          "modeled_residual_phase_rms": 0.36044113391969795,
+          "fidelity": 0.04296875,
+          "no_drift_ceiling_est": 0.060637199781305384,
+          "modeled_drift_survival": 0.7086202884528218,
+          "modeled_residual_phase_rms": 0.47522029813193734,
           "metadata": {
             "applied_counts": {
               "BASE": 6
@@ -186,10 +186,10 @@
           }
         },
         "X": {
-          "fidelity": 0.025390625,
-          "no_drift_ceiling_est": 0.03086489020562008,
-          "modeled_drift_survival": 0.822637787818105,
-          "modeled_residual_phase_rms": 0.359356093249693,
+          "fidelity": 0.04296875,
+          "no_drift_ceiling_est": 0.060530803619528416,
+          "modeled_drift_survival": 0.7098658440103287,
+          "modeled_residual_phase_rms": 0.4740258500961615,
           "metadata": {
             "applied_counts": {
               "X": 6
@@ -207,10 +207,10 @@
           }
         },
         "XY4": {
-          "fidelity": 0.1328125,
-          "no_drift_ceiling_est": 0.1450495546714546,
-          "modeled_drift_survival": 0.9156353516619047,
-          "modeled_residual_phase_rms": 0.24196569588260006,
+          "fidelity": 0.1796875,
+          "no_drift_ceiling_est": 0.1848040264466611,
+          "modeled_drift_survival": 0.9723137718098482,
+          "modeled_residual_phase_rms": 0.1367222041771574,
           "metadata": {
             "applied_counts": {
               "XY4": 6
@@ -228,10 +228,10 @@
           }
         },
         "BB1": {
-          "fidelity": 0.119140625,
-          "no_drift_ceiling_est": 0.1281373070110133,
-          "modeled_drift_survival": 0.9297887381834858,
-          "modeled_residual_phase_rms": 0.21956566342820716,
+          "fidelity": 0.09765625,
+          "no_drift_ceiling_est": 0.10932877215450038,
+          "modeled_drift_survival": 0.8932346725891599,
+          "modeled_residual_phase_rms": 0.27350728848837275,
           "metadata": {
             "applied_counts": {
               "BB1": 6
@@ -249,15 +249,15 @@
           }
         },
         "CONTOUR": {
-          "fidelity": 0.296875,
-          "no_drift_ceiling_est": 0.33807363729911083,
-          "modeled_drift_survival": 0.8781370898120036,
-          "modeled_residual_phase_rms": 0.2932206906682723,
+          "fidelity": 0.2109375,
+          "no_drift_ceiling_est": 0.2161010539929468,
+          "modeled_drift_survival": 0.9761058361468458,
+          "modeled_residual_phase_rms": 0.12689626402759568,
           "metadata": {
             "applied_counts": {
               "CONTOUR": 6
             },
-            "pulse_count_total": 16
+            "pulse_count_total": 20
           },
           "magnus_bounds": {
             "first_order_dc_mean": 0.0,
@@ -271,7 +271,7 @@
         }
       },
       "best_arm": "CONTOUR",
-      "best_arm_fidelity": 0.296875
+      "best_arm_fidelity": 0.2109375
     }
   ]
 }
