@@ -1,9 +1,10 @@
 {
   "version": "validation3-direct",
-  "timestamp_utc": "2026-02-22T04:29:03.440408+00:00",
+  "timestamp_utc": "2026-02-23T05:21:51.144531+00:00",
   "mode": "runtime",
   "backend": "ibm_torino",
   "grid_dt": 16,
+  "ceiling_model": "drift-factorized-v1",
   "backend_dt_seconds": 4e-09,
   "timing_constraints": {
     "granularity": 1,
@@ -26,6 +27,20 @@
       1,
       0
     ],
+    "lift_by_q": [
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1
+    ],
     "local_edge_count": 11
   },
   "n_qubits": 12,
@@ -44,15 +59,18 @@
     "CONTOUR"
   ],
   "jobs": {
-    "map_job_id": "d6d8bvh54hss73b9df9g",
-    "stress_job_id": "d6d8c1954hss73b9dfdg"
+    "map_job_id": "d6du7oh54hss73ba74h0",
+    "stress_job_id": "d6du7q17ce2c73fi6850"
   },
   "records": [
     {
       "time_executed_dt": 3200,
       "arms": {
         "BASE": {
-          "fidelity": 0.080078125,
+          "fidelity": 0.078125,
+          "no_drift_ceiling_est": 0.13502789589958913,
+          "modeled_drift_survival": 0.5785841472201873,
+          "modeled_residual_phase_rms": 0.42356032136413646,
           "metadata": {
             "applied_counts": {
               "BASE": 12
@@ -70,7 +88,10 @@
           }
         },
         "X": {
-          "fidelity": 0.083984375,
+          "fidelity": 0.08984375,
+          "no_drift_ceiling_est": 0.15454228713207965,
+          "modeled_drift_survival": 0.5813538266274977,
+          "modeled_residual_phase_rms": 0.4217352275928077,
           "metadata": {
             "applied_counts": {
               "X": 12
@@ -88,7 +109,10 @@
           }
         },
         "XY4": {
-          "fidelity": 0.28515625,
+          "fidelity": 0.28125,
+          "no_drift_ceiling_est": 0.281284178192686,
+          "modeled_drift_survival": 0.999878492303031,
+          "modeled_residual_phase_rms": 0.006364346476876831,
           "metadata": {
             "applied_counts": {
               "XY4": 12
@@ -106,7 +130,10 @@
           }
         },
         "BB1": {
-          "fidelity": 0.1796875,
+          "fidelity": 0.259765625,
+          "no_drift_ceiling_est": 0.27490148836586126,
+          "modeled_drift_survival": 0.9449407733081561,
+          "modeled_residual_phase_rms": 0.13730349944022818,
           "metadata": {
             "applied_counts": {
               "BB1": 12
@@ -124,12 +151,15 @@
           }
         },
         "CONTOUR": {
-          "fidelity": 0.248046875,
+          "fidelity": 0.3125,
+          "no_drift_ceiling_est": 0.31333848521057794,
+          "modeled_drift_survival": 0.9973240273692698,
+          "modeled_residual_phase_rms": 0.029880139440765174,
           "metadata": {
             "applied_counts": {
               "CONTOUR": 12
             },
-            "pulse_count_total": 48
+            "pulse_count_total": 46
           },
           "magnus_bounds": {
             "first_order_dc_mean": 0.0,
@@ -142,14 +172,17 @@
           }
         }
       },
-      "best_arm": "XY4",
-      "best_arm_fidelity": 0.28515625
+      "best_arm": "CONTOUR",
+      "best_arm_fidelity": 0.3125
     },
     {
       "time_executed_dt": 4912,
       "arms": {
         "BASE": {
-          "fidelity": 0.01171875,
+          "fidelity": 0.017578125,
+          "no_drift_ceiling_est": 0.02968917264343921,
+          "modeled_drift_survival": 0.5920719048358007,
+          "modeled_residual_phase_rms": 0.41557460219106596,
           "metadata": {
             "applied_counts": {
               "BASE": 12
@@ -167,7 +200,10 @@
           }
         },
         "X": {
-          "fidelity": 0.01171875,
+          "fidelity": 0.015625,
+          "no_drift_ceiling_est": 0.026451996453895,
+          "modeled_drift_survival": 0.5906926544177444,
+          "modeled_residual_phase_rms": 0.4164919569587225,
           "metadata": {
             "applied_counts": {
               "X": 12
@@ -186,6 +222,9 @@
         },
         "XY4": {
           "fidelity": 0.111328125,
+          "no_drift_ceiling_est": 0.11631885085624576,
+          "modeled_drift_survival": 0.9570944363746027,
+          "modeled_residual_phase_rms": 0.12078695521890238,
           "metadata": {
             "applied_counts": {
               "XY4": 12
@@ -203,7 +242,10 @@
           }
         },
         "BB1": {
-          "fidelity": 0.078125,
+          "fidelity": 0.0859375,
+          "no_drift_ceiling_est": 0.09488498965588592,
+          "modeled_drift_survival": 0.9057017375631775,
+          "modeled_residual_phase_rms": 0.18115580192366051,
           "metadata": {
             "applied_counts": {
               "BB1": 12
@@ -221,12 +263,15 @@
           }
         },
         "CONTOUR": {
-          "fidelity": 0.1640625,
+          "fidelity": 0.134765625,
+          "no_drift_ceiling_est": 0.1392863907334069,
+          "modeled_drift_survival": 0.9675433780026678,
+          "modeled_residual_phase_rms": 0.1047694648177597,
           "metadata": {
             "applied_counts": {
               "CONTOUR": 12
             },
-            "pulse_count_total": 42
+            "pulse_count_total": 46
           },
           "magnus_bounds": {
             "first_order_dc_mean": 0.0,
@@ -240,13 +285,16 @@
         }
       },
       "best_arm": "CONTOUR",
-      "best_arm_fidelity": 0.1640625
+      "best_arm_fidelity": 0.134765625
     },
     {
       "time_executed_dt": 6400,
       "arms": {
         "BASE": {
-          "fidelity": 0.00390625,
+          "fidelity": 0.001953125,
+          "no_drift_ceiling_est": 0.002743532062878084,
+          "modeled_drift_survival": 0.7119016491285642,
+          "modeled_residual_phase_rms": 0.3352053521232475,
           "metadata": {
             "applied_counts": {
               "BASE": 12
@@ -264,7 +312,10 @@
           }
         },
         "X": {
-          "fidelity": 0.00390625,
+          "fidelity": 0.0,
+          "no_drift_ceiling_est": 0.0,
+          "modeled_drift_survival": 0.709200716624722,
+          "modeled_residual_phase_rms": 0.3370599001573986,
           "metadata": {
             "applied_counts": {
               "X": 12
@@ -283,6 +334,9 @@
         },
         "XY4": {
           "fidelity": 0.068359375,
+          "no_drift_ceiling_est": 0.07611461550089949,
+          "modeled_drift_survival": 0.8981110204674444,
+          "modeled_residual_phase_rms": 0.18895285193071892,
           "metadata": {
             "applied_counts": {
               "XY4": 12
@@ -300,7 +354,10 @@
           }
         },
         "BB1": {
-          "fidelity": 0.041015625,
+          "fidelity": 0.03515625,
+          "no_drift_ceiling_est": 0.040425399742330205,
+          "modeled_drift_survival": 0.8696574486358689,
+          "modeled_residual_phase_rms": 0.215139519051862,
           "metadata": {
             "applied_counts": {
               "BB1": 12
@@ -318,12 +375,15 @@
           }
         },
         "CONTOUR": {
-          "fidelity": 0.14453125,
+          "fidelity": 0.115234375,
+          "no_drift_ceiling_est": 0.13062744357861691,
+          "modeled_drift_survival": 0.882160531072839,
+          "modeled_residual_phase_rms": 0.20398988231650997,
           "metadata": {
             "applied_counts": {
               "CONTOUR": 12
             },
-            "pulse_count_total": 36
+            "pulse_count_total": 40
           },
           "magnus_bounds": {
             "first_order_dc_mean": 0.0,
@@ -337,13 +397,16 @@
         }
       },
       "best_arm": "CONTOUR",
-      "best_arm_fidelity": 0.14453125
+      "best_arm_fidelity": 0.115234375
     },
     {
       "time_executed_dt": 8000,
       "arms": {
         "BASE": {
-          "fidelity": 0.0,
+          "fidelity": 0.00390625,
+          "no_drift_ceiling_est": 0.005618225584458096,
+          "modeled_drift_survival": 0.6952818005040601,
+          "modeled_residual_phase_rms": 0.3464984324982525,
           "metadata": {
             "applied_counts": {
               "BASE": 12
@@ -362,6 +425,9 @@
         },
         "X": {
           "fidelity": 0.0,
+          "no_drift_ceiling_est": 0.0,
+          "modeled_drift_survival": 0.696774989574315,
+          "modeled_residual_phase_rms": 0.34548251169507316,
           "metadata": {
             "applied_counts": {
               "X": 12
@@ -379,7 +445,10 @@
           }
         },
         "XY4": {
-          "fidelity": 0.0234375,
+          "fidelity": 0.02734375,
+          "no_drift_ceiling_est": 0.03164779557849004,
+          "modeled_drift_survival": 0.864001725876435,
+          "modeled_residual_phase_rms": 0.220130090903047,
           "metadata": {
             "applied_counts": {
               "XY4": 12
@@ -397,7 +466,10 @@
           }
         },
         "BB1": {
-          "fidelity": 0.017578125,
+          "fidelity": 0.013671875,
+          "no_drift_ceiling_est": 0.015737681101099788,
+          "modeled_drift_survival": 0.8687350386738091,
+          "modeled_residual_phase_rms": 0.21590898517720117,
           "metadata": {
             "applied_counts": {
               "BB1": 12
@@ -415,12 +487,15 @@
           }
         },
         "CONTOUR": {
-          "fidelity": 0.1171875,
+          "fidelity": 0.08203125,
+          "no_drift_ceiling_est": 0.09554600311463676,
+          "modeled_drift_survival": 0.8585523970225979,
+          "modeled_residual_phase_rms": 0.2248025178160342,
           "metadata": {
             "applied_counts": {
               "CONTOUR": 12
             },
-            "pulse_count_total": 34
+            "pulse_count_total": 32
           },
           "magnus_bounds": {
             "first_order_dc_mean": 0.0,
@@ -434,7 +509,7 @@
         }
       },
       "best_arm": "CONTOUR",
-      "best_arm_fidelity": 0.1171875
+      "best_arm_fidelity": 0.08203125
     }
   ]
 }
