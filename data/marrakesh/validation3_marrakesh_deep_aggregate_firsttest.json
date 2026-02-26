@@ -1,0 +1,109 @@
+{
+  "version": "validation3-marrakesh-deep-aggregate-firsttest",
+  "timestamp_utc": "2026-02-26T01:51:44.556550+00:00",
+  "backend": "ibm_marrakesh",
+  "source_files": [
+    "data/validation3_marrakesh_deep_q6_firsttest.json",
+    "data/validation3_marrakesh_deep_q8_firsttest.json",
+    "data/validation3_marrakesh_deep_q12_firsttest.json"
+  ],
+  "aggregate": {
+    "n_slots": 6,
+    "wins_vs_X": 6,
+    "wins_vs_XY4": 4,
+    "wins_vs_BB1": 6,
+    "mean_dX": 0.2789713541666667,
+    "mean_dXY4": 0.034505208333333336,
+    "mean_dBB1": 0.2916666666666667,
+    "mean_contour_fid": 0.3694661458333333,
+    "mean_contour_ceiling": 0.4111211706768724,
+    "mean_contour_headroom": 0.041655024843539105,
+    "slots": [
+      {
+        "q": 6,
+        "t": 6400,
+        "BASE": 0.26171875,
+        "X": 0.33984375,
+        "XY4": 0.517578125,
+        "BB1": 0.16796875,
+        "CONTOUR": 0.517578125,
+        "dX": 0.177734375,
+        "dXY4": 0.0,
+        "dBB1": 0.349609375,
+        "CONTOUR_ceil": 0.5770559867243923,
+        "CONTOUR_surv": 0.8969287849138986
+      },
+      {
+        "q": 6,
+        "t": 8000,
+        "BASE": 0.16015625,
+        "X": 0.158203125,
+        "XY4": 0.404296875,
+        "BB1": 0.138671875,
+        "CONTOUR": 0.470703125,
+        "dX": 0.3125,
+        "dXY4": 0.06640625,
+        "dBB1": 0.33203125,
+        "CONTOUR_ceil": 0.4766601122841391,
+        "CONTOUR_surv": 0.9875026520352345
+      },
+      {
+        "q": 8,
+        "t": 6400,
+        "BASE": 0.005859375,
+        "X": 0.009765625,
+        "XY4": 0.412109375,
+        "BB1": 0.09375,
+        "CONTOUR": 0.390625,
+        "dX": 0.380859375,
+        "dXY4": -0.021484375,
+        "dBB1": 0.296875,
+        "CONTOUR_ceil": 0.44970017060539913,
+        "CONTOUR_surv": 0.8686343157800664
+      },
+      {
+        "q": 8,
+        "t": 8000,
+        "BASE": 0.029296875,
+        "X": 0.029296875,
+        "XY4": 0.287109375,
+        "BB1": 0.0546875,
+        "CONTOUR": 0.33203125,
+        "dX": 0.302734375,
+        "dXY4": 0.044921875,
+        "dBB1": 0.27734375,
+        "CONTOUR_ceil": 0.3581499548349158,
+        "CONTOUR_surv": 0.9270732706166196
+      },
+      {
+        "q": 12,
+        "t": 6400,
+        "BASE": 0.0,
+        "X": 0.001953125,
+        "XY4": 0.228515625,
+        "BB1": 0.01171875,
+        "CONTOUR": 0.2890625,
+        "dX": 0.287109375,
+        "dXY4": 0.060546875,
+        "dBB1": 0.27734375,
+        "CONTOUR_ceil": 0.35032642091664734,
+        "CONTOUR_surv": 0.8251233213973782
+      },
+      {
+        "q": 12,
+        "t": 8000,
+        "BASE": 0.0,
+        "X": 0.00390625,
+        "XY4": 0.16015625,
+        "BB1": 0.0,
+        "CONTOUR": 0.216796875,
+        "dX": 0.212890625,
+        "dXY4": 0.056640625,
+        "dBB1": 0.216796875,
+        "CONTOUR_ceil": 0.25483437869574094,
+        "CONTOUR_surv": 0.8507363728142985
+      }
+    ]
+  },
+  "claim_for_today": "Marrakesh deep-check 2026-02-26T01:51:44.556550+00:00: CONTOUR beat X in 6/6, BB1 in 6/6, XY4 in 4/6; mean deltas dX=+0.2790, dBB1=+0.2917, dXY4=+0.0345."
+}

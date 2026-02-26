@@ -119,6 +119,9 @@ Positive cells represent per-slot CONTOUR uplift against XY4.
 - Aggregate scorecard: `data/torino/validation3_torino_full_paritylift_aggregate_today.json`
 - Deep rerun outputs: `data/torino/validation3_torino_deep_q*_today2.json`
 - Deep rerun aggregate: `data/torino/validation3_torino_deep_aggregate_today2.json`
+- Exploratory Marrakesh deep outputs: `data/marrakesh/validation3_marrakesh_deep_q*_firsttest.json`
+- Exploratory Marrakesh deep aggregate: `data/marrakesh/validation3_marrakesh_deep_aggregate_firsttest.json`
+- Marrakesh first-test summary: `docs/marrakesh_deep_firsttest.md`
 - Figures: `docs/figures/*.png`
 - Slot table: `docs/torino_table.md`
 - Deep table: `docs/deep_check_today2.md`
