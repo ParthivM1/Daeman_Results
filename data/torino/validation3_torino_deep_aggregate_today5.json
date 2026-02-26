@@ -1,0 +1,213 @@
+{
+  "version": "validation3-torino-deep-aggregate-today5",
+  "timestamp_utc": "2026-02-26T16:16:57.196718+00:00",
+  "backend": "ibm_torino",
+  "source_files": [
+    "data/validation3_torino_deep_q6_today5.json",
+    "data/validation3_torino_deep_q8_today5.json",
+    "data/validation3_torino_deep_q12_today5.json"
+  ],
+  "aggregate": {
+    "n_slots": 6,
+    "wins_vs_X": 6,
+    "wins_vs_XY4": 5,
+    "wins_vs_BB1": 6,
+    "mean_dX": 0.16927083333333334,
+    "mean_dXY4": 0.060546875,
+    "mean_dBB1": 0.10091145833333333
+  },
+  "results": [
+    {
+      "n_qubits": 6,
+      "time_executed_dt": 6400,
+      "CONTOUR": 0.37109375,
+      "X": 0.05859375,
+      "XY4": 0.28125,
+      "BB1": 0.21484375,
+      "dX": 0.3125,
+      "dXY4": 0.08984375,
+      "dBB1": 0.15625,
+      "winner_vs_XY4": "CONTOUR",
+      "best_arm": "CONTOUR"
+    },
+    {
+      "n_qubits": 6,
+      "time_executed_dt": 8000,
+      "CONTOUR": 0.3125,
+      "X": 0.03515625,
+      "XY4": 0.1484375,
+      "BB1": 0.1015625,
+      "dX": 0.27734375,
+      "dXY4": 0.1640625,
+      "dBB1": 0.2109375,
+      "winner_vs_XY4": "CONTOUR",
+      "best_arm": "CONTOUR"
+    },
+    {
+      "n_qubits": 8,
+      "time_executed_dt": 6400,
+      "CONTOUR": 0.16015625,
+      "X": 0.01171875,
+      "XY4": 0.1328125,
+      "BB1": 0.09375,
+      "dX": 0.1484375,
+      "dXY4": 0.02734375,
+      "dBB1": 0.06640625,
+      "winner_vs_XY4": "CONTOUR",
+      "best_arm": "CONTOUR"
+    },
+    {
+      "n_qubits": 8,
+      "time_executed_dt": 8000,
+      "CONTOUR": 0.08984375,
+      "X": 0.0078125,
+      "XY4": 0.1171875,
+      "BB1": 0.06640625,
+      "dX": 0.08203125,
+      "dXY4": -0.02734375,
+      "dBB1": 0.0234375,
+      "winner_vs_XY4": "XY4",
+      "best_arm": "XY4"
+    },
+    {
+      "n_qubits": 12,
+      "time_executed_dt": 6400,
+      "CONTOUR": 0.13671875,
+      "X": 0.00390625,
+      "XY4": 0.0390625,
+      "BB1": 0.03125,
+      "dX": 0.1328125,
+      "dXY4": 0.09765625,
+      "dBB1": 0.10546875,
+      "winner_vs_XY4": "CONTOUR",
+      "best_arm": "CONTOUR"
+    },
+    {
+      "n_qubits": 12,
+      "time_executed_dt": 8000,
+      "CONTOUR": 0.0625,
+      "X": 0.0,
+      "XY4": 0.05078125,
+      "BB1": 0.01953125,
+      "dX": 0.0625,
+      "dXY4": 0.01171875,
+      "dBB1": 0.04296875,
+      "winner_vs_XY4": "CONTOUR",
+      "best_arm": "CONTOUR"
+    }
+  ],
+  "pulse_level_firing": [
+    {
+      "n_qubits": 6,
+      "time_executed_dt": 6400,
+      "arm": "CONTOUR",
+      "applied_count": 6,
+      "pulse_count_total": 14,
+      "avg_pulses_per_fired_node": 2.3333333333333335,
+      "fired_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "n_qubits": 6,
+      "time_executed_dt": 8000,
+      "arm": "CONTOUR",
+      "applied_count": 6,
+      "pulse_count_total": 14,
+      "avg_pulses_per_fired_node": 2.3333333333333335,
+      "fired_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "n_qubits": 8,
+      "time_executed_dt": 6400,
+      "arm": "CONTOUR",
+      "applied_count": 8,
+      "pulse_count_total": 28,
+      "avg_pulses_per_fired_node": 3.5,
+      "fired_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "n_qubits": 8,
+      "time_executed_dt": 8000,
+      "arm": "CONTOUR",
+      "applied_count": 8,
+      "pulse_count_total": 26,
+      "avg_pulses_per_fired_node": 3.25,
+      "fired_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "n_qubits": 12,
+      "time_executed_dt": 6400,
+      "arm": "CONTOUR",
+      "applied_count": 12,
+      "pulse_count_total": 42,
+      "avg_pulses_per_fired_node": 3.5,
+      "fired_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "n_qubits": 12,
+      "time_executed_dt": 8000,
+      "arm": "CONTOUR",
+      "applied_count": 12,
+      "pulse_count_total": 38,
+      "avg_pulses_per_fired_node": 3.1666666666666665,
+      "fired_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    }
+  ]
+}

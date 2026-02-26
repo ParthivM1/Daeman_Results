@@ -1,0 +1,33 @@
+{
+  "version": "validation3-cross-backend-deep-today5",
+  "timestamp_utc": "2026-02-26T16:16:57.198108+00:00",
+  "runs": [
+    {
+      "key": "marrakesh",
+      "backend": "ibm_marrakesh",
+      "optimal": false,
+      "aggregate_file": "data/validation3_marrakesh_deep_aggregate_today5.json",
+      "nonwins_vs_XY4": [
+        [
+          8,
+          6400,
+          -0.02734375
+        ]
+      ]
+    },
+    {
+      "key": "torino",
+      "backend": "ibm_torino",
+      "optimal": false,
+      "aggregate_file": "data/validation3_torino_deep_aggregate_today5.json",
+      "nonwins_vs_XY4": [
+        [
+          8,
+          8000,
+          -0.02734375
+        ]
+      ]
+    }
+  ],
+  "upload_allowed": false
+}

@@ -50,6 +50,25 @@ Deep-only confirmation rerun (`6400dt`, `8000dt`) across Q6/Q8/Q12:
 Detailed deep slot table:
 - `docs/deep_check_today2.md`
 
+### Cross-Backend Deep Validation (Today5)
+
+Deep-only run (`6400dt`, `8000dt`) across Q6/Q8/Q12 on both IBM backends:
+
+- Marrakesh aggregate: `data/marrakesh/validation3_marrakesh_deep_aggregate_today5.json`
+  - vs X: 6/6
+  - vs BB1: 6/6
+  - vs XY4: 5/6 (`mean dXY4 = +0.0469`)
+  - non-win slot: `q8 @ 6400dt` (`dXY4 = -0.0273`)
+- Torino aggregate: `data/torino/validation3_torino_deep_aggregate_today5.json`
+  - vs X: 6/6
+  - vs BB1: 6/6
+  - vs XY4: 5/6 (`mean dXY4 = +0.0605`)
+  - non-win slot: `q8 @ 8000dt` (`dXY4 = -0.0273`)
+
+Cross-backend summary and pulse-level firing metadata:
+- `data/validation3_cross_backend_deep_today5.json`
+- `docs/deep_check_today5.md`
+
 Quick links:
 - Slot table: `docs/torino_table.md`
 - Deep-time curve: `docs/figures/deep_time_decay_curve.png`
@@ -119,6 +138,12 @@ Positive cells represent per-slot CONTOUR uplift against XY4.
 - Aggregate scorecard: `data/torino/validation3_torino_full_paritylift_aggregate_today.json`
 - Deep rerun outputs: `data/torino/validation3_torino_deep_q*_today2.json`
 - Deep rerun aggregate: `data/torino/validation3_torino_deep_aggregate_today2.json`
+- Cross-backend deep outputs (today5):
+  - `data/marrakesh/validation3_marrakesh_deep_q*_today5.json`
+  - `data/torino/validation3_torino_deep_q*_today5.json`
+  - `data/marrakesh/validation3_marrakesh_deep_aggregate_today5.json`
+  - `data/torino/validation3_torino_deep_aggregate_today5.json`
+  - `data/validation3_cross_backend_deep_today5.json`
 - Exploratory Marrakesh deep outputs: `data/marrakesh/validation3_marrakesh_deep_q*_firsttest.json`
 - Exploratory Marrakesh deep aggregate: `data/marrakesh/validation3_marrakesh_deep_aggregate_firsttest.json`
 - Marrakesh first-test summary: `docs/marrakesh_deep_firsttest.md`
