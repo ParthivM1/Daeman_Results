@@ -1,0 +1,281 @@
+{
+  "version": "validation3-direct",
+  "timestamp_utc": "2026-02-27T15:06:55.957252+00:00",
+  "mode": "runtime",
+  "backend": "ibm_marrakesh",
+  "grid_dt": 16,
+  "ceiling_model": "drift-factorized-v1",
+  "backend_dt_seconds": 4e-09,
+  "timing_constraints": {
+    "granularity": 1,
+    "pulse_alignment": 1,
+    "acquire_alignment": 1
+  },
+  "coloring": {
+    "n_colors": 2,
+    "color_by_q": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "lift_by_q": [
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1
+    ],
+    "local_edge_count": 7
+  },
+  "n_qubits": 8,
+  "x_duration_dt": 9,
+  "times_executed_dt": [
+    6400,
+    8000
+  ],
+  "arms": [
+    "BASE",
+    "X",
+    "XY4",
+    "BB1",
+    "CONTOUR"
+  ],
+  "jobs": {
+    "map_job_id": "d6gr5um48nic73am7a80",
+    "stress_job_id": "d6gr629keb2s73bdqki0"
+  },
+  "records": [
+    {
+      "time_executed_dt": 6400,
+      "arms": {
+        "BASE": {
+          "fidelity": 0.01171875,
+          "no_drift_ceiling_est": 0.11002427567395308,
+          "modeled_drift_survival": 0.1065105853068958,
+          "modeled_residual_phase_rms": 0.9508675726461956,
+          "metadata": {
+            "applied_counts": {
+              "BASE": 8
+            },
+            "pulse_count_total": 0
+          },
+          "magnus_bounds": {
+            "first_order_dc_mean": 0.0,
+            "first_order_linear_mean": 0.0,
+            "first_order_total_mean": 0.0,
+            "second_order_raw_mean": 0.0,
+            "second_order_norm_mean": 0.0,
+            "second_order_norm_p90": 0.0,
+            "sample_dt": 16.0
+          }
+        },
+        "X": {
+          "fidelity": 0.0078125,
+          "no_drift_ceiling_est": 0.07803269872307093,
+          "modeled_drift_survival": 0.10011828538348601,
+          "modeled_residual_phase_rms": 0.9599337289444346,
+          "metadata": {
+            "applied_counts": {
+              "X": 8
+            },
+            "pulse_count_total": 8
+          },
+          "magnus_bounds": {
+            "first_order_dc_mean": 0.0,
+            "first_order_linear_mean": 0.0,
+            "first_order_total_mean": 0.0,
+            "second_order_raw_mean": 0.0,
+            "second_order_norm_mean": 0.0,
+            "second_order_norm_p90": 0.0,
+            "sample_dt": 16.0
+          }
+        },
+        "XY4": {
+          "fidelity": 0.3203125,
+          "no_drift_ceiling_est": 0.7960478488084647,
+          "modeled_drift_survival": 0.40237845059119015,
+          "modeled_residual_phase_rms": 0.6566791922148112,
+          "metadata": {
+            "applied_counts": {
+              "XY4": 8
+            },
+            "pulse_count_total": 32
+          },
+          "magnus_bounds": {
+            "first_order_dc_mean": 0.0,
+            "first_order_linear_mean": 0.0,
+            "first_order_total_mean": 0.0,
+            "second_order_raw_mean": 0.0,
+            "second_order_norm_mean": 0.0,
+            "second_order_norm_p90": 0.0,
+            "sample_dt": 16.0
+          }
+        },
+        "BB1": {
+          "fidelity": 0.12890625,
+          "no_drift_ceiling_est": 0.15174113349863586,
+          "modeled_drift_survival": 0.8495142156108835,
+          "modeled_residual_phase_rms": 0.2846641389428839,
+          "metadata": {
+            "applied_counts": {
+              "BB1": 8
+            },
+            "pulse_count_total": 40
+          },
+          "magnus_bounds": {
+            "first_order_dc_mean": 0.0,
+            "first_order_linear_mean": 0.0,
+            "first_order_total_mean": 0.0,
+            "second_order_raw_mean": 0.0,
+            "second_order_norm_mean": 0.0,
+            "second_order_norm_p90": 0.0,
+            "sample_dt": 16.0
+          }
+        },
+        "CONTOUR": {
+          "fidelity": 0.42578125,
+          "no_drift_ceiling_est": 0.663318896874385,
+          "modeled_drift_survival": 0.6418952512981576,
+          "modeled_residual_phase_rms": 0.46510283203234476,
+          "metadata": {
+            "applied_counts": {
+              "CONTOUR": 8
+            },
+            "pulse_count_total": 34
+          },
+          "magnus_bounds": {
+            "first_order_dc_mean": 0.0,
+            "first_order_linear_mean": 0.0,
+            "first_order_total_mean": 0.0,
+            "second_order_raw_mean": 0.0,
+            "second_order_norm_mean": 0.0,
+            "second_order_norm_p90": 0.0,
+            "sample_dt": 16.0
+          }
+        }
+      },
+      "best_arm": "CONTOUR",
+      "best_arm_fidelity": 0.42578125
+    },
+    {
+      "time_executed_dt": 8000,
+      "arms": {
+        "BASE": {
+          "fidelity": 0.0,
+          "no_drift_ceiling_est": 0.0,
+          "modeled_drift_survival": 0.14493839097864328,
+          "modeled_residual_phase_rms": 0.9150247449705535,
+          "metadata": {
+            "applied_counts": {
+              "BASE": 8
+            },
+            "pulse_count_total": 0
+          },
+          "magnus_bounds": {
+            "first_order_dc_mean": 0.0,
+            "first_order_linear_mean": 0.0,
+            "first_order_total_mean": 0.0,
+            "second_order_raw_mean": 0.0,
+            "second_order_norm_mean": 0.0,
+            "second_order_norm_p90": 0.0,
+            "sample_dt": 16.0
+          }
+        },
+        "X": {
+          "fidelity": 0.0,
+          "no_drift_ceiling_est": 0.0,
+          "modeled_drift_survival": 0.14722747234571323,
+          "modeled_residual_phase_rms": 0.9118718658216884,
+          "metadata": {
+            "applied_counts": {
+              "X": 8
+            },
+            "pulse_count_total": 8
+          },
+          "magnus_bounds": {
+            "first_order_dc_mean": 0.0,
+            "first_order_linear_mean": 0.0,
+            "first_order_total_mean": 0.0,
+            "second_order_raw_mean": 0.0,
+            "second_order_norm_mean": 0.0,
+            "second_order_norm_p90": 0.0,
+            "sample_dt": 16.0
+          }
+        },
+        "XY4": {
+          "fidelity": 0.22265625,
+          "no_drift_ceiling_est": 0.5195224116559682,
+          "modeled_drift_survival": 0.42857871961728705,
+          "modeled_residual_phase_rms": 0.6179374383000918,
+          "metadata": {
+            "applied_counts": {
+              "XY4": 8
+            },
+            "pulse_count_total": 32
+          },
+          "magnus_bounds": {
+            "first_order_dc_mean": 0.0,
+            "first_order_linear_mean": 0.0,
+            "first_order_total_mean": 0.0,
+            "second_order_raw_mean": 0.0,
+            "second_order_norm_mean": 0.0,
+            "second_order_norm_p90": 0.0,
+            "sample_dt": 16.0
+          }
+        },
+        "BB1": {
+          "fidelity": 0.125,
+          "no_drift_ceiling_est": 1.0,
+          "modeled_drift_survival": 0.10538508814767461,
+          "modeled_residual_phase_rms": 0.9106977717629002,
+          "metadata": {
+            "applied_counts": {
+              "BB1": 8
+            },
+            "pulse_count_total": 40
+          },
+          "magnus_bounds": {
+            "first_order_dc_mean": 0.0,
+            "first_order_linear_mean": 0.0,
+            "first_order_total_mean": 0.0,
+            "second_order_raw_mean": 0.0,
+            "second_order_norm_mean": 0.0,
+            "second_order_norm_p90": 0.0,
+            "sample_dt": 16.0
+          }
+        },
+        "CONTOUR": {
+          "fidelity": 0.32421875,
+          "no_drift_ceiling_est": 0.373548504082447,
+          "modeled_drift_survival": 0.8679428413088779,
+          "modeled_residual_phase_rms": 0.26524039475382954,
+          "metadata": {
+            "applied_counts": {
+              "CONTOUR": 8
+            },
+            "pulse_count_total": 30
+          },
+          "magnus_bounds": {
+            "first_order_dc_mean": 0.0,
+            "first_order_linear_mean": 0.0,
+            "first_order_total_mean": 0.0,
+            "second_order_raw_mean": 0.0,
+            "second_order_norm_mean": 0.0,
+            "second_order_norm_p90": 0.0,
+            "sample_dt": 16.0
+          }
+        }
+      },
+      "best_arm": "CONTOUR",
+      "best_arm_fidelity": 0.32421875
+    }
+  ]
+}

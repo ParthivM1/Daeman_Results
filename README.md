@@ -69,6 +69,13 @@ Cross-backend summary and pulse-level firing metadata:
 - `data/validation3_cross_backend_deep_today5.json`
 - `docs/deep_check_today5.md`
 
+### Marrakesh Deep Validation (Today6)
+
+Marrakesh-only deep rerun (`6400dt`, `8000dt`) across Q6/Q8/Q12:
+- Aggregate: `data/marrakesh/validation3_marrakesh_deep_aggregate_today6.json`
+- vs X: 6/6, vs BB1: 6/6, vs XY4: 5/6 (`mean dXY4 = +0.0677`)
+- Detailed note: `docs/marrakesh_deep_today6.md`
+
 Quick links:
 - Slot table: `docs/torino_table.md`
 - Deep-time curve: `docs/figures/deep_time_decay_curve.png`
@@ -144,6 +151,10 @@ Positive cells represent per-slot CONTOUR uplift against XY4.
   - `data/marrakesh/validation3_marrakesh_deep_aggregate_today5.json`
   - `data/torino/validation3_torino_deep_aggregate_today5.json`
   - `data/validation3_cross_backend_deep_today5.json`
+- Marrakesh deep outputs (today6):
+  - `data/marrakesh/validation3_marrakesh_deep_q*_today6.json`
+  - `data/marrakesh/validation3_marrakesh_deep_aggregate_today6.json`
+  - `docs/marrakesh_deep_today6.md`
 - Exploratory Marrakesh deep outputs: `data/marrakesh/validation3_marrakesh_deep_q*_firsttest.json`
 - Exploratory Marrakesh deep aggregate: `data/marrakesh/validation3_marrakesh_deep_aggregate_firsttest.json`
 - Marrakesh first-test summary: `docs/marrakesh_deep_firsttest.md`
