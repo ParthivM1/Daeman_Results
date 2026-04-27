@@ -1,4 +1,6 @@
-﻿# CONTOUR: Enterprise Quantum Error Suppression
+# Daemon: Quantum Runtime and Error Suppression Stack
+
+Live IBM benchmark evidence against Fire Opal, with proprietary runtime internals withheld.
 
 ![Torino](https://img.shields.io/badge/Backend-IBM%20Torino-0a66c2)
 ![vs X](https://img.shields.io/badge/CONTOUR%20vs%20X-12%2F12-success)
@@ -6,20 +8,26 @@
 ![vs XY4](https://img.shields.io/badge/CONTOUR%20vs%20XY4-11%2F12-success)
 ![Mean dXY4](https://img.shields.io/badge/Mean%20dXY4-%2B0.0531-success)
 
-**CONTOUR** (Continuous Topological Phase Surfer) is a proprietary, deterministic quantum compiler for suppressing deep-time decoherence and lattice crosstalk on superconducting processors.
+Daemon is a quantum runtime/control stack for noisy hardware, currently tested mostly on IBM superconducting backends.
 
-CONTOUR is designed for low-latency operation and benchmarked against standard dynamic decoupling baselines (`X`, `XY4`, `BB1`) on IBM heavy-hex hardware.
+It improves execution before and during the run by changing circuit representation, drift/error handling, support circuits, and backend-specific execution choice.
 
-Daemon extends this into a broader runtime/control stack: representation-aware circuit selection, TSME protection branches, CONTOUR drift control, transverse X/XX suppression, residual perturbation handling, and backend-aware execution policy.
+The public repo is a benchmark showcase only; core compiler/runtime internals are proprietary.
 
-> This repository is the **public benchmark showcase** only.  
+Current results include multiple matched live wins against Q-CTRL Fire Opal on `n=16` TFIM, Heisenberg, and XY workloads.
+
+Repeatability across calibration windows is still being tightened, so the claim here is benchmark-scoped live hardware wins, not universal SOTA.
+
+Daemon includes CONTOUR, a proprietary drift-control layer, plus TSME representation/protection, transverse X/XX suppression, residual perturbation handling, and backend-aware execution policy.
+
+> This repository is the **public benchmark showcase** only.
 > The core CONTOUR transpilation engine and calibration daemon are proprietary commercial IP.
 
 ---
 
 ## Live Fire Opal Comparison Snapshot
 
-Daemon has early matched benchmark wins against Q-CTRL Fire Opal on live IBM systems. The strongest completed results include:
+Daemon has matched benchmark wins against Q-CTRL Fire Opal on live IBM systems. The strongest completed results include:
 
 | Workload | Backend | Daemon / PQMCF best | Fire Opal best | Gap |
 |:--|:--|--:|--:|--:|
@@ -38,13 +46,29 @@ Detailed table:
 
 ## Approach (High-Level)
 
-CONTOUR is an adaptive, hardware-aware suppression stack that:
+Daemon is a runtime-level suppression stack with several components:
+
+1. TSME representation and protection branches for changing how the workload is embedded and protected.
+2. CONTOUR drift control for calibration-aware deep-time stabilization.
+3. Transverse X/XX suppression and residual perturbation handling for harder error regimes.
+4. Backend-aware execution policy for choosing how the workload is packaged and run.
+
+CONTOUR itself is an adaptive, hardware-aware suppression layer that:
 
 1. Uses calibration-derived signals to adapt control intensity by regime.
 2. Applies topology-aware coordination to reduce interference at scale.
 3. Runs as a deterministic low-latency runtime layer suitable for production workflows.
 
 Detailed actuator math, scheduling policy, and calibration logic are intentionally withheld.
+
+---
+
+## What I'm Looking For
+
+- Additional compute access on IBM and other hardware.
+- External technical feedback on benchmark methodology and validation quality.
+- Help testing repeatability across calibration windows.
+- Conversations with accelerator, research, or funding partners if the evidence is strong enough.
 
 ---
 
@@ -193,6 +217,11 @@ Positive cells represent per-slot CONTOUR uplift against XY4.
 
 ---
 
-## Commercial Access
+## Contact
 
-For benchmark verification, partnership inquiries, or evaluation access, contact the repository owner.
+For benchmark verification, compute-access discussions, technical review, or partnership inquiries:
+
+Parthiv Maddipatla  
+TJHSST  
+2027pmaddipa@tjhsst.edu  
+https://github.com/ParthivM1
