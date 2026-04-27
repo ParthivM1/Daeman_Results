@@ -10,8 +10,29 @@
 
 CONTOUR is designed for low-latency operation and benchmarked against standard dynamic decoupling baselines (`X`, `XY4`, `BB1`) on IBM heavy-hex hardware.
 
+Daemon extends this into a broader runtime/control stack: representation-aware circuit selection, TSME protection branches, CONTOUR drift control, transverse X/XX suppression, residual perturbation handling, and backend-aware execution policy.
+
 > This repository is the **public benchmark showcase** only.  
 > The core CONTOUR transpilation engine and calibration daemon are proprietary commercial IP.
+
+---
+
+## Live Fire Opal Comparison Snapshot
+
+Daemon has early matched benchmark wins against Q-CTRL Fire Opal on live IBM systems. The strongest completed results include:
+
+| Workload | Backend | Daemon / PQMCF best | Fire Opal best | Gap |
+|:--|:--|--:|--:|--:|
+| TFIM mixed n16 v5 | IBM Marrakesh | 0.904184 | 0.872475 | +0.031709 |
+| TFIM mixed n16 v4 | IBM Kingston | 0.921005 | 0.897435 | +0.023570 |
+| TFIM mixed n16 v11 | IBM Fez | 0.917041 | 0.906602 | +0.010439 |
+| Heisenberg mixed n16 v1 | IBM Marrakesh | 0.932244 | 0.923357 | +0.008887 |
+| XY ring n16 v8 | IBM Fez | 0.979066 | 0.975757 | +0.003309 |
+
+Repeatability is still being tightened. Recent Marrakesh reruns flipped against Daemon, so the current claim is benchmark-scoped live hardware wins, not universal SOTA.
+
+Detailed table:
+- `docs/fireopal_matched_results.md`
 
 ---
 
